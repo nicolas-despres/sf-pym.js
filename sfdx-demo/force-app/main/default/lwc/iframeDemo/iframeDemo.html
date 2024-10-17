@@ -1,0 +1,19 @@
+<template>
+  <div class="slds-var-p-around_x-small">
+    <lightning-button
+      variant="brand"
+      label="Send Message to iframe"
+      onclick={handleSendMessage}
+    ></lightning-button>
+  </div>
+  <span id="example"></span>
+   <iframe
+    src={url}
+    height={height}
+    width={width}
+    referrerpolicy={referrerPolicy}
+    sandbox={sandbox}
+    title="techdicer"
+  ></iframe>
+  
+</template>
